@@ -43,9 +43,8 @@ module.exports = function(grunt) {
       files: [
         // Add filespec list here
         'app/**/*.js',
-        'public/**/*.js',
-        'Gruntfile.js'
-              ],
+        'public/**/*.js'
+      ],
       options: {
         force: 'true',
         jshintrc: '.jshintrc',
@@ -99,7 +98,7 @@ module.exports = function(grunt) {
 
   grunt.resgisterTask('heroku:production', [
     'build'
-    ]);
+  ]);
 
   grunt.registerTask('server-dev', function (target) {
     // Running nodejs in a different process and displaying output on the main console
