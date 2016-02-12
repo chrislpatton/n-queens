@@ -43,8 +43,9 @@ module.exports = function(grunt) {
       files: [
         // Add filespec list here
         'app/**/*.js',
-        'public/**/*.js'
-      ],
+        'public/**/*.js',
+        'Gruntfile.js'
+              ],
       options: {
         force: 'true',
         jshintrc: '.jshintrc',
