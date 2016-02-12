@@ -96,7 +96,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-nodemon');
 
-  grunt.resgisterTask('heroku:production', [
+  grunt.registerTask('heroku:production', [
     'build'
   ]);
 
